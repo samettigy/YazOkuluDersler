@@ -14,7 +14,7 @@ namespace YazOkuluDersler
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            int x = Convert.ToInt32(Request.QueryString["OGRID"]);
+            int x = Convert.ToInt32(Request.QueryString["OGRID"]); 
             Response.Write(x);
             EntityOgrenci ent = new EntityOgrenci();
             ent.ID = x;
